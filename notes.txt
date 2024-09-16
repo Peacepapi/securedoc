@@ -8,4 +8,5 @@ Classes will inherit
 
 Research
     concept of request context
-    serializing and desrializing
+    serializing and deserializing
+    Attribute converter
