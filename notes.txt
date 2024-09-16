@@ -1,0 +1,4 @@
+Entity
+
+Classes will inherit
+    Auditable -> all entities
