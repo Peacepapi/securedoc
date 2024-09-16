@@ -1,4 +1,5 @@
 Entity
+Entity VS Domain - entities are classes that will be persisted in the database - domains are for regular classes
 
 Classes will inherit
     Auditable -> all entities
