@@ -10,3 +10,7 @@ Research
     concept of request context
     serializing and deserializing
     Attribute converter
+    cascade delete with foreign key
+    @JsonIdentityInfo
+    @JsonIdentityReference
+    @JsonProperty

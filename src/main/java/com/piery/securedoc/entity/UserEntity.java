@@ -24,6 +24,7 @@ public class UserEntity extends Auditable {
     private String lastName;
     @Column(unique = true, nullable = false)
     private String email;
+    private String password; // TODO create credential class
     private Integer loginAttempts;
     private LocalDateTime lastLogin;
     private String phone;
