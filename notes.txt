@@ -3,3 +3,9 @@ Entity VS Domain - entities are classes that will be persisted in the database -
 
 Classes will inherit
     Auditable -> all entities
+
+
+
+Research
+    concept of request context
+    serializing and desrializing

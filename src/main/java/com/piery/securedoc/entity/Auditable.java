@@ -2,6 +2,7 @@ package com.piery.securedoc.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.piery.securedoc.domain.RequestContext;
 import com.piery.securedoc.exception.ApiException;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -47,7 +48,7 @@ public abstract class Auditable {
 //    Before saving an entity this check will run
     @PrePersist
     public void beforePersist() {
-        var userId = 1L;
+        var userId = RequestContext.getUserId();
         if(userId == null) {
             throw new ApiException("Cannot persist entity without user ID in Request Context for this thread");
         }
@@ -61,7 +62,7 @@ public abstract class Auditable {
 //    Before updating an entity this check will run
     @PrePersist
     public void beforeUpdate() {
-        var userId = 1L;
+        var userId = RequestContext.getUserId();
         if(userId == null) {
             throw new ApiException("Cannot update entity without user ID in Request Context for this thread");
         }
