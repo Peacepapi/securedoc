@@ -6,9 +6,10 @@ Classes will inherit
 
 
 
-Research
+Review
     concept of request context
     serializing and deserializing
+    OOP
     Attribute converter
     cascade delete with foreign key
     @JsonIdentityInfo
