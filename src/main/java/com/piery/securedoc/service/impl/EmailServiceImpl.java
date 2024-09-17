@@ -20,9 +20,9 @@ import static com.piery.securedoc.utils.EmailUtils.getPasswordResetMessage;
 @Slf4j
 public class EmailServiceImpl implements EmailService {
     private final JavaMailSender sender;
-    @Value("${spring.email.verify.host}")
+    @Value("${spring.mail.verify.host}")
     private String host;
-    @Value("${spring.email.username}")
+    @Value("${spring.mail.username}")
     private String fromEmail;
 
     @Override
